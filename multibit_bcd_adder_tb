@@ -1,0 +1,26 @@
+module multibit_bcd_adder_tb();
+reg [15:0] A;
+reg [15:0] B;
+wire [15:0] sum;
+wire cout;
+multibit_bcd_adder dut(.A(A),.B(B),.sum(sum),.cout(cout));
+initial begin
+$monitor("time:%0t, A=%d%d%d%d, B=%d%d%d%d, sum=%d%d%d%d, cout=%b",
+          $time,A[15:12],A[11:8],A[7:4],A[3:0],
+          B[15:12],B[11:8],B[7:4],B[3:0],
+          sum[15:12],sum[11:8],sum[7:4],sum[3:0],cout);
+  A=16'b0001_0010_0011_0100;// bcd for 1234
+  B=16'b1000_0111_0110_0101;// bcd for 8765
+  #10;
+  A=16'b1001_1001_1001_1001;// bcd for 9999
+  B=16'b0000_0000_0000_0001;// bcd for 0001
+  #10;
+  A=16'b0001_0001_0001_0001;// bcd for 1111
+  B=16'b1000_1000_1000_1000;// bcd for 8888
+  #10;
+  A=16'b0000_0000_0000_0000;// bcd for 0000
+  B=16'b1001_1001_1001_1001;// bcd for 9999
+  #10;
+  $finish;
+end
+endmodule

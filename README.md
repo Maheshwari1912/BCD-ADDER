@@ -15,4 +15,5 @@ Each BCD adder handles one digit of the input numbers, and the carry-out from on
 
 **schematic:**
 
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/693aae79-2290-4ccf-84f8-6f7fb1c15713)
+

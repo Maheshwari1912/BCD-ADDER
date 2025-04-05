@@ -8,3 +8,7 @@ When the sum of two BCD digits exceeds 9 (i.e., 1001 in binary), a correction is
 A multi-digit BCD adder can be created by cascading multiple single-digit BCD adders. 
 
 Each BCD adder handles one digit of the input numbers, and the carry-out from one digit's addition becomes the carry-in for the next higher digit's addition. 
+
+**simulation results:**
+
+![image](https://github.com/user-attachments/assets/f4fb7323-e980-444a-9238-0405971ed7e5)

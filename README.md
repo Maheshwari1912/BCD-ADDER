@@ -12,3 +12,7 @@ Each BCD adder handles one digit of the input numbers, and the carry-out from on
 **simulation results:**
 
 ![image](https://github.com/user-attachments/assets/f4fb7323-e980-444a-9238-0405971ed7e5)
+
+**schematic:**
+
+![Uploading image.png…]()
